@@ -1,9 +1,4 @@
-/**
-* Template Name: DevFolio - v2.0.0
-* Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 (function($) {
   "use strict";
 
@@ -53,6 +48,21 @@
     time: 2000
   });
 
+  var form = document.getElementById('form');
+
+  function submitForm(){
+    var button = document.getElementById('submitButton');
+    button.innerText = 'Message Sent !';
+    button.disabled = true;
+}
+
+  if(form.addEventListener){
+    form.addEventListener('submit',submitForm,false);
+  } else {
+    form.attachEvent('onsubmit',submitForm);
+  }
+  
+  
   /*--/ Star Scrolling nav /--*/
   $('a.js-scroll[href*="#"]:not([href="#"])').on("click", function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
