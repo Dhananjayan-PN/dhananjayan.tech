@@ -42,6 +42,7 @@
     }, 1000);
   });
 
+
   /*--/ Star Counter /--*/
   $('.counter').counterUp({
     delay: 15,
