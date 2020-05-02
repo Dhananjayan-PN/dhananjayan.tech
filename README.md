@@ -1,2 +1,2 @@
-# Profile-Website
-Repository for my personal profile website's files
+# dhananjayan.tech
+My personal profile website repository
