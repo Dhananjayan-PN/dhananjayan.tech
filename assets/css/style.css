@@ -338,7 +338,7 @@ a:hover {
   position: fixed;
   display: none;
   background: #3bdcff;
-  color: #fff;
+  color: #000;
   width: 44px;
   height: 44px;
   text-align: center;
@@ -353,7 +353,7 @@ a:hover {
 
 .back-to-top i {
   padding-top: 12px;
-  color: #fff;
+  color: #000;
 }
 
 @media (max-width: 768px) {
@@ -496,7 +496,7 @@ a:hover {
 }
 
 .button:hover {
-  background-color: #2ec4ff;
+  background-color: #3bdcff;
   transition: all 500ms ease;
 }
 
@@ -830,6 +830,10 @@ a:hover {
 
 .about-mf .about-img {
   margin-bottom: 2rem;
+}
+
+.about-mf .about-img .img-fluid {
+  border-radius: 0.5rem;
 }
 
 .about-mf .about-img img {

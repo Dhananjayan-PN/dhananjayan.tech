@@ -108,7 +108,7 @@
                     <div class="row">
                       <div class="col-sm-6 col-md-5">
                         <div class="about-img">
-                          <img src="assets/img/ProfilePic.jpg" class="img-fluid rounded b-shadow-a" alt="" />
+                          <img src="assets/img/ProfilePic.jpg" class="img-fluid b-shadow-a" alt="" />
                         </div>
                       </div>
                       <div class="col-sm-6 col-md-7">
@@ -613,8 +613,9 @@
                                   class="form-control"
                                   id="name"
                                   placeholder="Your Name"
-                                  data-rule="minlen:1"
+                                  data-rule="minlen:3"
                                   data-msg="Please enter at least 4 chars"
+                                  required
                                 />
                                 <div class="validate"></div>
                               </div>
@@ -630,6 +631,7 @@
                                   placeholder="Your Email"
                                   data-rule="email"
                                   data-msg="Please enter a valid email"
+                                  required
                                 />
                                 <div class="validate"></div>
                               </div>
@@ -645,6 +647,7 @@
                                   placeholder="Subject"
                                   data-rule="minlen:8"
                                   data-msg="Please enter at least 8 chars of subject"
+                                  required
                                 />
                                 <div class="validate"></div>
                               </div>
@@ -659,6 +662,7 @@
                                   data-rule="required"
                                   data-msg="Please write a message"
                                   placeholder="Message"
+                                  required
                                 ></textarea>
                                 <div class="validate"></div>
                               </div>
