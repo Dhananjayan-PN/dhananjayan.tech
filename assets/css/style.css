@@ -1194,3 +1194,26 @@ footer .credits {
 footer .credits a {
   color: #fff;
 }
+
+/*--------------------------------------------------------------
+# Zoom
+--------------------------------------------------------------*/
+
+.service-box-zoom {
+  transition: transform 0.2s;
+}
+.service-box-zoom:hover {
+  transform: scale(1.07);
+}
+.work-box-zoom {
+  transition: transform 0.2s;
+}
+.work-box-zoom:hover {
+  transform: scale(1.06);
+}
+.ico-circle-zoom {
+  transition: transform 0.2s;
+}
+.ico-circle-zoom:hover {
+  transform: scale(1.09);
+}
