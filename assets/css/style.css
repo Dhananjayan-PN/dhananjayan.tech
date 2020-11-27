@@ -1225,6 +1225,9 @@ footer .credits a {
   transform: scale(1.08);
 }
 
+/*--------------------------------------------------------------
+# Circular Progress bar
+--------------------------------------------------------------*/
 .progress-ring__circle {
   transition: stroke-dashoffset 0.5s;
   transform: rotate(-90deg);
