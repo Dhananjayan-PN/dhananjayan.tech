@@ -59,6 +59,10 @@
   var form = document.getElementById("form");
 
   function submitForm() {
+    document.getElementsById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("subject").value = "";
+    document.getElementById("message").value = "";
     var button = document.getElementById("submitButton");
     button.innerText = "Message Sent !";
     button.disabled = true;
