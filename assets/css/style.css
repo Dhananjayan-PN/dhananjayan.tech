@@ -1217,3 +1217,9 @@ footer .credits a {
 .ico-circle-zoom:hover {
   transform: scale(1.09);
 }
+
+.progress-ring__circle {
+  transition: stroke-dashoffset 0.5s;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}

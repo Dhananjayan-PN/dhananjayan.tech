@@ -55,7 +55,28 @@
     delay: 15,
     time: 2000
   });
+  /*--/ Circular Progress Indicator /--*/
+  var circles = document.getElementsByTagName("circle");
+  for (var i = 0; i < circles.length; i++) {
+    var radius = circles[i].getAttribute("r");
+    var value = circles[i].getAttribute("val");
+    var circumference = radius * 2 * Math.PI;
+    circles[i].style.strokeDasharray = `${circumference} ${circumference}`;
+    circles[i].style.strokeDashoffset = `${circumference}`;
+    const offset = circumference - (value / 100) * circumference;
+    circles[i].style.strokeDashoffset = offset;
+  }
+  // var circle = document.querySelector("circle");
+  // var radius = circle.r.baseVal.value;
+  // var circumference = radius * 2 * Math.PI;
+  // circle.style.strokeDasharray = `${circumference} ${circumference}`;
+  // circle.style.strokeDashoffset = `${circumference}`;
 
+  // function setProgress(percent, element) {
+  //   const offset = circumference - (percent / 100) * circumference;
+  //   circle.style.strokeDashoffset = offset;
+  // }
+  /*--/ Form Submit Actions /--*/
   var form = document.getElementById("form");
 
   function submitForm() {
