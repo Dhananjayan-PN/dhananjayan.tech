@@ -1218,6 +1218,13 @@ footer .credits a {
   transform: scale(1.09);
 }
 
+.lang-zoom {
+  transition: transform 0.2s;
+}
+.lang-zoom:hover {
+  transform: scale(1.08);
+}
+
 .progress-ring__circle {
   transition: stroke-dashoffset 0.5s;
   transform: rotate(-90deg);
