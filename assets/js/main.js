@@ -55,6 +55,7 @@
     delay: 15,
     time: 2000
   });
+
   /*--/ Circular Progress Indicator /--*/
   var circles = document.getElementsByTagName("circle");
   for (var i = 0; i < circles.length; i++) {
@@ -66,16 +67,6 @@
     const offset = circumference - (value / 100) * circumference;
     circles[i].style.strokeDashoffset = offset;
   }
-  // var circle = document.querySelector("circle");
-  // var radius = circle.r.baseVal.value;
-  // var circumference = radius * 2 * Math.PI;
-  // circle.style.strokeDasharray = `${circumference} ${circumference}`;
-  // circle.style.strokeDashoffset = `${circumference}`;
-
-  // function setProgress(percent, element) {
-  //   const offset = circumference - (percent / 100) * circumference;
-  //   circle.style.strokeDashoffset = offset;
-  // }
   /*--/ Form Submit Actions /--*/
   var form = document.getElementById("form");
 
@@ -94,6 +85,21 @@
   } else {
     form.attachEvent("onsubmit", submitForm);
   }
+
+  /*--/ View More Button Handle /--*/
+  var viewMore = false;
+  $(".view-more-button").on("click", function () {
+    viewMore = !viewMore;
+    var moreDiv = document.getElementById("more-div");
+    var moreButton = document.getElementById("moreButton");
+    if (viewMore) {
+      moreDiv.style.display = "contents";
+      moreButton.innerHTML = 'View Less<i id="buttonIcon" class="fa fa-chevron-up view-more-button-icon"></i>';
+    } else {
+      moreDiv.style.display = "none";
+      moreButton.innerHTML = 'View More<i id="buttonIcon" class="fa fa-chevron-down view-more-button-icon"></i>';
+    }
+  });
 
   /*--/ Star Scrolling nav /--*/
   $('a.js-scroll[href*="#"]:not([href="#"])').on("click", function () {
