@@ -343,9 +343,10 @@ a:hover {
   height: 48px;
   text-align: center;
   line-height: 1;
-  font-size: 16px;
+  font-size: 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px;
   border-radius: 50%;
-  right: 80px;
+  right: 78px;
   bottom: 18px;
   transition: background 0.5s;
   z-index: 11;
@@ -358,7 +359,7 @@ a:hover {
 
 @media (max-width: 768px) {
   .back-to-top {
-    bottom: 15px;
+    bottom: 18px;
   }
 }
 
@@ -1263,6 +1264,7 @@ footer .credits a {
 }
 
 #bmc-wbtn {
-  width: 50px !important;
-  height: 50px !important;
+  color: #000;
+  width: 48px !important;
+  height: 48px !important;
 }
