@@ -10,6 +10,11 @@
     }
   });
 
+  // Popover
+  // $(function () {
+  //   $('[data-toggle="popover"]').popover();
+  // });
+
   // Preloader
   $(window).on("load", function () {
     if ($("#preloader").length) {

@@ -1268,3 +1268,31 @@ footer .credits a {
   width: 48px !important;
   height: 48px !important;
 }
+
+/*--------------------------------------------------------------
+# Certification Modals
+--------------------------------------------------------------*/
+.modal-content {
+  border-radius: 15px;
+  background-color: #1f2325;
+}
+.modal-title {
+  color: rgb(255, 255, 255) !important;
+}
+
+.modal-body h6 {
+  color: rgb(255, 255, 255) !important;
+}
+.modal-header {
+  border-bottom: 1px solid #3bdbff33;
+}
+
+.modal-header button {
+  color: #3bdcff;
+  background-color: transparent;
+  border: 0;
+}
+
+.modal-header button:focus {
+  outline: none !important;
+}
