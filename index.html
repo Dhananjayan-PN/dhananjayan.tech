@@ -12,6 +12,18 @@
 
       gtag("config", "UA-165644618-1");
     </script>
+    
+    <script type="module">
+      let counter = document.getElementById("dynamic-coffee-counter");
+      console.log(counter);
+      fetch('https://coffee-tracker-v1.herokuapp.com/api/tracker/get-djay-count').then(function (response) {
+        return response.json();
+      }).then(function (data) {
+        counter.innerText = data.count;
+      }).catch(function (err) {
+        console.warn('Unable to fetch coffee counter', err);
+      });
+    </script>
 
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -617,7 +629,7 @@
                   <span class="ico-circle"><i class="ion-coffee"></i></span>
                 </div>
                 <div class="counter-num">
-                  <p class="counter">69420</p>
+                  <p id="dynamic-coffee-counter" class="counter"></p>
                   <span class="counter-text">CUPS OF COFFEE</span>
                 </div>
               </div>
